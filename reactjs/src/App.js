@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-const baseURL = "http://localhost:4000/api/products"
-const imageURL = "http://localhost:4000"
+// const baseURL = "http://localhost:4000/api/products"
+// const imageURL = "http://localhost:4000"
+const baseURL = process.env.REACT_APP_BASE_URL
+const imageURL = process.env.REACT_APP_IMAGE_URL
 
 function App() {
 
